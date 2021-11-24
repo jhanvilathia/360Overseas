@@ -1,0 +1,11 @@
+<?php 
+	session_start();
+	if(isset($_SESSION['firstname']))
+	{
+		header("location:index.php");
+	}
+	else
+	{
+		header("location:login.php");
+	}
+?>
